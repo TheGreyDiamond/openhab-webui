@@ -79,6 +79,7 @@ export const OhSliderCardDefinition = () => new WidgetDefinition('oh-slider-card
 import GaugeParameters from '../system/gauge.js'
 export const OhGaugeCardDefinition = () => new WidgetDefinition('oh-gauge-card', 'Gauge Card', 'Display a read-only gauge in a card to visualize a quantifiable item')
   .paramGroup(CardParameterGroup(), CardParameters())
+  .paramGroup(actionGroup(), actionParams())
   .paramGroup(pg('gauge', 'Gauge', 'Parameters are passed to the underlying <a target="_blank" class="external text-color-blue" href="https://framework7.io/vue/gauge.html#gauge-properties">Gauge control</a>'), GaugeParameters())
 
 // OhKnobCard
