@@ -69,6 +69,7 @@ export const OhRollershutterCardDefinition = () => new WidgetDefinition('oh-roll
   ])
   .paramGroup(pg('controls', 'Rollershutter Controls'), RollershutterParameters())
 
+
 // OhSliderCard
 import SliderParameters from '../system/slider.js'
 export const OhSliderCardDefinition = () => new WidgetDefinition('oh-slider-card', 'Slider Card', 'Display a slider in a card to control an item')
@@ -163,3 +164,4 @@ export const OhClockCardDefinition = () => new WidgetDefinition('oh-clock-card',
       })
   ])
   .paramGroup(actionGroup(null, 'Action to perform when the clock is clicked'), actionParams())
+
